@@ -1,8 +1,0 @@
-prefix=/home/david/rv-marine-gazebo/catkin_ws/install
-
-Name: marine_duckiebot_description
-Description: Description of marine_duckiebot_description
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/david/rv-marine-gazebo/catkin_ws/install/lib 
-Requires: 

@@ -1,8 +1,0 @@
-prefix=/home/david/rv-marine-gazebo/catkin_ws/devel
-
-Name: kingfisher_msgs
-Description: Description of kingfisher_msgs
-Version: 0.1.0
-Cflags: -I/home/david/rv-marine-gazebo/catkin_ws/devel/include
-Libs: -L/home/david/rv-marine-gazebo/catkin_ws/devel/lib 
-Requires: message_runtime

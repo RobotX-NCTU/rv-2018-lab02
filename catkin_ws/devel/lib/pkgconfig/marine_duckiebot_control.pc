@@ -1,8 +1,0 @@
-prefix=/home/david/rv-marine-gazebo/catkin_ws/devel
-
-Name: marine_duckiebot_control
-Description: Description of marine_duckiebot_control
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/david/rv-marine-gazebo/catkin_ws/devel/lib 
-Requires: 

@@ -1,2 +1,0 @@
-set(kingfisher_msgs_MESSAGE_FILES "/home/david/rv-marine-gazebo/catkin_ws/src/robotx_forum_tutorials/kingfisher/kingfisher_msgs/msg/Sense.msg;/home/david/rv-marine-gazebo/catkin_ws/src/robotx_forum_tutorials/kingfisher/kingfisher_msgs/msg/Drive.msg;/home/david/rv-marine-gazebo/catkin_ws/src/robotx_forum_tutorials/kingfisher/kingfisher_msgs/msg/Course.msg;/home/david/rv-marine-gazebo/catkin_ws/src/robotx_forum_tutorials/kingfisher/kingfisher_msgs/msg/Helm.msg")
-set(kingfisher_msgs_SERVICE_FILES "")

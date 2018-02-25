@@ -1,19 +1,16 @@
-# duckietown_robotx_gazebo
-This repo include 3 repo, due to dependency  
-*   [robotx_forum tutorial](https://github.com/RobotX-NCTU/robotx_forum_tutorials)  
-*   [bamboo_lake_gazebo](https://github.com/RobotX-NCTU/bamboo_lake_gazebo)    
-*   [marine_duckiebot](https://github.com/RobotX-NCTU/marine_duckiebot)  
+# rv_marine_gazebo
+ 
 ## clone    
 **>MUST CLONE WITH SSH**  
 ```
-$ git clone https://github.com/RobotX-NCTU/rv-2018-lab02.git rv-marine-gazebo
+$ git clone https://github.com/RobotX-NCTU/rv-2018-lab02.git rv_marine_gazebo
 ```
 
 ## build
 ```
-$ cd duckietown_robotx_gazebo/
+$ cd ~/rv_marine_gazebo
 $ source dependencies_common.sh
-$ cd catkin_ws/
+$ cd ~/rv_marine_gazebo/catkin_ws/
 $ catkin_make
 (it may take some time)
 ```

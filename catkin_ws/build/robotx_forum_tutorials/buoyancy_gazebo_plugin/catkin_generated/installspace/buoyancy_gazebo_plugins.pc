@@ -1,8 +1,0 @@
-prefix=/home/david/rv-marine-gazebo/catkin_ws/install
-
-Name: buoyancy_gazebo_plugins
-Description: Description of buoyancy_gazebo_plugins
-Version: 0.0.1
-Cflags: -I/home/david/rv-marine-gazebo/catkin_ws/install/include
-Libs: -L/home/david/rv-marine-gazebo/catkin_ws/install/lib 
-Requires: roscpp

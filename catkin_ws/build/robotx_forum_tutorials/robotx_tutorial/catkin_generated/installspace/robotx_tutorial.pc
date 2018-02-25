@@ -1,8 +1,0 @@
-prefix=/home/david/rv-marine-gazebo/catkin_ws/install
-
-Name: robotx_tutorial
-Description: Description of robotx_tutorial
-Version: 0.0.1
-Cflags: 
-Libs: -L/home/david/rv-marine-gazebo/catkin_ws/install/lib 
-Requires: 
