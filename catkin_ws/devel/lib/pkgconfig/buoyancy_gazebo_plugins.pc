@@ -1,0 +1,8 @@
+prefix=/home/david/rv-marine-gazebo/catkin_ws/devel
+
+Name: buoyancy_gazebo_plugins
+Description: Description of buoyancy_gazebo_plugins
+Version: 0.0.1
+Cflags: -I/home/david/rv-marine-gazebo/catkin_ws/src/robotx_forum_tutorials/buoyancy_gazebo_plugin/include
+Libs: -L/home/david/rv-marine-gazebo/catkin_ws/devel/lib 
+Requires: roscpp

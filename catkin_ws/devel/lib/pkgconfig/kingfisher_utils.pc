@@ -1,0 +1,8 @@
+prefix=/home/david/rv-marine-gazebo/catkin_ws/devel
+
+Name: kingfisher_utils
+Description: Description of kingfisher_utils
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/david/rv-marine-gazebo/catkin_ws/devel/lib 
+Requires: 

@@ -1,0 +1,8 @@
+prefix=/home/david/rv-marine-gazebo/catkin_ws/install
+
+Name: kingfisher_gazebo
+Description: Description of kingfisher_gazebo
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/david/rv-marine-gazebo/catkin_ws/install/lib 
+Requires: 

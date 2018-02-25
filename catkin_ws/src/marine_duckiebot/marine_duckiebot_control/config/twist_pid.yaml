@@ -1,0 +1,27 @@
+!!python/object/new:dynamic_reconfigure.encoding.Config
+dictitems:
+  groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+    dictitems:
+      groups: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      id: 0
+      name: Default
+      parameters: !!python/object/new:dynamic_reconfigure.encoding.Config
+        state: []
+      parent: 0
+      state: true
+      type: ''
+      velKd: 0.0
+      velKi: 0.3
+      velKp: 0.7
+      yawKd: 0.0
+      yawKi: 2.17
+      yawKp: 1.5
+    state: []
+  velKd: 0.0
+  velKi: 0.3
+  velKp: 0.7
+  yawKd: 0.0
+  yawKi: 2.17
+  yawKp: 1.5
+state: []
