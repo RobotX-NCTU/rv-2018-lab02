@@ -1,7 +1,6 @@
 # rv_marine_gazebo
  
 ## clone    
-**>MUST CLONE WITH SSH**  
 ```
 $ git clone https://github.com/RobotX-NCTU/rv-2018-lab02.git rv_marine_gazebo
 ```
@@ -20,7 +19,6 @@ $ catkin_make
 $ source environment.sh
 ```
 You should run environment.sh before doing anything in this package
-
 
 ## About bamboo_lake_gazebo
 all model world
