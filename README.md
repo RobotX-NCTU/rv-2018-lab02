@@ -25,5 +25,11 @@ all model world
 ```
 $ roslaunch bamboo_lake_gazebo all_model.launch
 ```
+
+## Open RobotX environment
+spawn model
+```
+$ roslaunch marine_duckiebot_description marine_duckiebot_spawn.launch
+```
 ![](https://i.imgur.com/oLhUigJ.jpg)  
 ![](https://i.imgur.com/uwR3X6I.jpg)  
