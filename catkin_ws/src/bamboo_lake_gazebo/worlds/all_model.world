@@ -13,72 +13,7 @@
     <include>
       <uri>model://sun</uri>
     </include>
-    <!--
-   <light type="directional" name="point">
-      <pose>-100 100 0 0 0 0</pose>
-      <diffuse>127 127 127 255</diffuse>
-      <specular>25 25 25 255</specular>
-      <attenuation>
-        <range>20</range>
-        <linear>0.2</linear>
-        <constant>0.8</constant>
-        <quadratic>0.01</quadratic>
-      </attenuation>
-      <cast_shadows>false</cast_shadows>
-   </light>
 
-   <light type="directional" name="point1">
-      <pose>100 100 0 0 0 0</pose>
-      <diffuse>127 127 127 255</diffuse>
-      <specular>25 25 25 255</specular>
-      <attenuation>
-        <range>20</range>
-        <linear>0.2</linear>
-        <constant>0.8</constant>
-        <quadratic>0.01</quadratic>
-      </attenuation>
-      <cast_shadows>false</cast_shadows>
-   </light>
-
-   <light type="directional" name="point2">
-      <pose>-100 -100 0 0 0 0</pose>
-      <diffuse>127 127 127 255</diffuse>
-      <specular>25 25 25 255</specular>
-      <attenuation>
-        <range>20</range>
-        <linear>0.2</linear>
-        <constant>0.8</constant>
-        <quadratic>0.01</quadratic>
-      </attenuation>
-      <cast_shadows>false</cast_shadows>
-   </light>
-
-   <light type="directional" name="point3">
-      <pose>100 -100 0 0 0 0</pose>
-      <diffuse>127 127 127 255</diffuse>
-      <specular>25 25 25 255</specular>
-      <attenuation>
-        <range>20</range>
-        <linear>0.2</linear>
-        <constant>0.8</constant>
-        <quadratic>0.01</quadratic>
-      </attenuation>
-      <cast_shadows>false</cast_shadows>
-   </light>
-
-   <light type="directional" name="point4">
-      <pose>0 0 0 0 0 0</pose>
-      <diffuse>127 127 127 255</diffuse>
-      <specular>25 25 25 255</specular>
-      <attenuation>
-        <range>20</range>
-        <linear>0.2</linear>
-        <constant>0.8</constant>
-        <quadratic>0.01</quadratic>
-      </attenuation>
-      <cast_shadows>false</cast_shadows>
-   </light>
- -->
     <include>
       <pose>0 0 0 0 0 0 </pose>
       <uri>model://model/bamboo_with_wall</uri>

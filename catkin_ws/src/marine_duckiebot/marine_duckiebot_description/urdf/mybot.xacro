@@ -186,12 +186,12 @@
 
     <inertial>
       <mass value="6.65" />
-      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <origin xyz="1.135 0 0" rpy="0 0 0"/>
       <box_inertia m="${cameraMass}" x="${cameraSize}" y="${cameraSize}" z="${cameraSize}" />
       <inertia ixx="0.0001" ixy="0" ixz="0" iyy="0.0001" iyz="0" izz="0.0001" />
     </inertial>
   </link>
-  <joint name="weight_joint" type="continuous">
+  <joint name="weight_joint" type="fixed">
     <axis xyz="0 0 0" />
     <origin xyz="-0.2 0 0.0" rpy="0 0.0 0"/>
     <parent link="base_link"/>
