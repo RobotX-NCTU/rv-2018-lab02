@@ -39,6 +39,11 @@
     </include>
 
     <include>
+      <pose> -1 0 0 0 0 0 </pose>
+      <uri>model://model/blue_buoy</uri>
+    </include>
+
+    <include>
       <pose>4.56 1.24 0 0 0 0  </pose>
       <uri>model://model/red_buoy</uri>
     </include>
