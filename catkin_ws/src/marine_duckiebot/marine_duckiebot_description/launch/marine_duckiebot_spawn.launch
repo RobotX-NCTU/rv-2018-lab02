@@ -32,12 +32,12 @@
     <!--=== choose duckiebot robot ===-->
     <group if="$(arg duckiebot)">
       <arg name="urdf" default="$(find marine_duckiebot_description)/urdf/mybot.xacro"/>
-      <param name="robot_description" command="$(find xacro)/xacro $(arg urdf) veh:=rv"/>
+      <param name="robot_description" command="$(find xacro)/xacro $(arg urdf) "/>
     </group>
     <!--=== choose usv robot ===-->
     <group if="$(arg usv)">
       <arg name="urdf" default="$(find kingfisher_gazebo)/urdf/base_gazebo.xacro"/>
-      <param name="robot_description" command="$(find xacro)/xacro $(arg urdf) imu:=true gps:=true microstrain:=true p3d:=true"/>
+      <param name="robot_description" command="$(find xacro)/xacro $(arg urdf) "/>
     </group>
     <!-- Spawn robot in gazebo -->
     <node name="spawn_duckiebot_model" pkg="gazebo_ros" type="spawn_model"
@@ -54,6 +54,7 @@
       <param name="gazebo_origin_long" value="-121.912" type="double" />
     </node>
 
+    <!--=== define PID controller ===-->
     <node pkg="kingfisher_control" type="pid_control.py" name="pid_control" output="screen">
       <param name="yaw_type" value="$(arg yaw_type)"/>
       <param name="yawKp" value="0.5" type="double"/>
@@ -70,6 +71,8 @@
 
       <remap from="odometry/nav" to="nav_odom" />
     </node>
+    <!--=== publish global tf ===-->
+    <node pkg="marine_duckiebot_navigation" type="odometry_fake.py" name="odometry_fake" output="screen"/>
 
 </group>
 	

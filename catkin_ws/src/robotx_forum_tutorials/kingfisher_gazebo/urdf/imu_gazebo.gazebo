@@ -1,10 +1,9 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="kingfisher_imu_gazebo" params="name">
+<robot>
     <gazebo>
       <!-- Either plugin should work -->
       <!--<plugin name="imu_plugin_${name}" filename="libgazebo_ros_imu.so">-->
-      <plugin name="imu_plugin_${name}" filename="libhector_gazebo_ros_imu.so">
+      <plugin name="imu_plugin" filename="libhector_gazebo_ros_imu.so">
 	<updateRate>10.0</updateRate>
 	<bodyName>base_link</bodyName>
 	<topicName>imu/data</topicName>
@@ -29,5 +28,4 @@
 
       </plugin>
     </gazebo>
-  </xacro:macro>
 </robot>

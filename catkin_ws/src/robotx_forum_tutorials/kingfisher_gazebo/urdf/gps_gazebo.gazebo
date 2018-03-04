@@ -1,8 +1,7 @@
 <?xml version="1.0"?>
-<robot xmlns:xacro="http://ros.org/wiki/xacro">
-  <xacro:macro name="kingfisher_gps_gazebo" params="name">
+<robot>
     <gazebo>
-      <plugin name="gps_plugin_${name}" filename="libhector_gazebo_ros_gps.so">
+      <plugin name="gps_plugin" filename="libhector_gazebo_ros_gps.so">
 	<updateRate>1.0</updateRate>
 	<alwaysOn>true</alwaysOn>
 	<bodyName>base_link</bodyName>
@@ -24,5 +23,4 @@
 
       </plugin>
     </gazebo>  
-  </xacro:macro>
 </robot>

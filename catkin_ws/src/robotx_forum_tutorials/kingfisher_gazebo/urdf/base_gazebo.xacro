@@ -10,37 +10,16 @@
   <!-- Testing old plugin -->
   <!--<xacro:include filename="$(find kingfisher_plugins)/urdf/kingfisher_plugin.xacro" />-->
   
-  <!-- Defines the macro for including simulated camera -->
-  <xacro:include filename="$(find kingfisher_gazebo)/urdf/kingfisher_camera.xacro" />
+  <!-- Add Gazebo sensor plugin -->
+  <xacro:include filename="$(find kingfisher_gazebo)/urdf/camera_gazebo.gazebo" />
+  <xacro:include filename="$(find kingfisher_gazebo)/urdf/p3d_gazebo.gazebo" />
 
-  <!-- Defines the macro for simulated GPS -->
-  <xacro:include filename="$(find kingfisher_gazebo)/urdf/gps_gazebo.xacro" />
-  
-  <!-- Defines the macro for simulated IMU -->
-  <xacro:include filename="$(find kingfisher_gazebo)/urdf/imu_gazebo.xacro" />
-
-  <!-- Macro for P3D ground truth -->
-  <xacro:include filename="$(find kingfisher_gazebo)/urdf/p3d_gazebo.xacro" />
-
-  <!-- Call the macros defined above -->
   <!-- includes basic description witout plugins -->
   <xacro:kingfisher_base />
   <!-- USV dynamic model -->
   <xacro:usv_gazebo name="kingfisher"/>
 
-  <!-- Optional sensor plugins - called by macros defined above -->
-  <xacro:if value="$(arg gps)">
-    <xacro:kingfisher_gps_gazebo name="kingfisher"/>
-  </xacro:if>
-  <xacro:if value="$(arg imu)">
-    <xacro:kingfisher_imu_gazebo name="kingfisher"/>
-  </xacro:if>
-  <xacro:if value="$(arg p3d)">
-    <xacro:kingfisher_p3d_gazebo name="kingfisher"/>
-  </xacro:if>
-
-  <xacro:kingfisher_gazebo_camera name="kingfisher"/>
-
+  <!-- Add velodyne -->
   <xacro:include filename="$(find velodyne_description)/urdf/VLP-16.urdf.xacro"/>
   <VLP-16 parent="base_link" name="velodyne" topic="/velodyne_points" hz="10" samples="440">
     <origin xyz="0 0 0.17" rpy="0 0 0" />
