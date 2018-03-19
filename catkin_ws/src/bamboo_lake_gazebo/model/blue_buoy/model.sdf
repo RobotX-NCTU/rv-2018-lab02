@@ -13,7 +13,7 @@
         <cast_shadows>false</cast_shadows>
         <geometry>
           <mesh>
-            <uri>model://model/buoy_A7/meshes/a7.dae</uri>
+            <uri>model://model/blue_buoy/meshes/blue_buoy.dae</uri>
           </mesh>         
         </geometry>
         <material>

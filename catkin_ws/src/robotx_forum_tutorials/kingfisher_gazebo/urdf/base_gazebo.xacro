@@ -13,6 +13,8 @@
   <!-- Add Gazebo sensor plugin -->
   <xacro:include filename="$(find kingfisher_gazebo)/urdf/camera_gazebo.gazebo" />
   <xacro:include filename="$(find kingfisher_gazebo)/urdf/p3d_gazebo.gazebo" />
+  <xacro:include filename="$(find kingfisher_gazebo)/urdf/gps_gazebo.gazebo" />
+  <xacro:include filename="$(find kingfisher_gazebo)/urdf/imu_gazebo.gazebo" />
 
   <!-- includes basic description witout plugins -->
   <xacro:kingfisher_base />

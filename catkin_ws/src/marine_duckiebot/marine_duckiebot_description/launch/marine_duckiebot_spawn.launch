@@ -74,6 +74,12 @@
     <!--=== publish global tf ===-->
     <node pkg="marine_duckiebot_navigation" type="odometry_fake.py" name="odometry_fake" output="screen"/>
 
+    <!--=== open Apriltags detector ===-->
+    <remap from="image_rect" to="/rrbot/camera1/image_raw" />
+    <remap from="compressed" to="/rrbot/camera1/image_raw/compressed" />
+    <remap from="camera_node/image/camera_info" to="/rrbot/camera1/camera_info" />
+    <include file="$(find apriltags_ros)/launch/apriltag_detector_node.launch"></include>
+
 </group>
 	
 
