@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<!-- start basic args -->
+	<arg name="veh" default="david"/>
+	<arg name="config" default="baseline" />
+	<arg name="param_file_name" default="default" />
+	<arg name="local" default="true"/>
+	<arg name="joystick" default="true"/>
+	<!-- end basic args -->
+
+	<!-- Start Joystick -->
+	<group if="$(arg joystick)">
+		<!-- joy -->
+		<include file="$(find joy_mapper)/launch/joy_node.launch">
+			<arg name="veh" value="$(arg veh)"/>
+			<arg name="config" value="$(arg config)"/>
+			<arg name="param_file_name" value="$(arg param_file_name)"/>
+			<arg name="local" value="$(arg local)"/>
+		</include>
+
+		<!-- joy_mapper -->
+		<include file="$(find joy_mapper)/launch/joy_mapper_node.launch">
+			<arg name="veh" value="$(arg veh)"/>
+			<arg name="config" value="$(arg config)"/>
+			<arg name="param_file_name" value="$(arg param_file_name)"/>
+			<arg name="local" value="$(arg local)"/>
+		</include>
+	<!-- End Joystick -->
+	</group>
+</launch>
